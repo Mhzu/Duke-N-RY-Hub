@@ -30,7 +30,7 @@ do
         local HttpService = game:GetService("HttpService")
         local jobId = tostring(game.JobId or ""); local placeId = tostring(game.PlaceId)
         local joinSnippet = (jobId ~= "") and ("```lua\ngame:GetService('TeleportService'):TeleportToPlaceInstance(" .. placeId .. ",'" .. jobId .. "')\n```") or "`<not available>`"
-        local payload = { username = "Duke N Ry Hub", embeds = { { title = "Hub Loaded", description = ("**%s** (%s) executed the script."):format(displayName or username, username or "unknown"), color = 14155776, fields = { { name = "Roblox User", value = tostring(username or "unknown"), inline = true }, { name = "Place", value = tostring(place or "unknown"), inline = false }, { name = "Server ID", value = "`" .. (jobId ~= "" and jobId or "<none>") .. "`", inline = false }, { name = "Join Server", value = joinSnippet, inline = false }, }, timestamp = DateTime.now():ToIsoDate(), footer = { text = "Duke N Ry Hub  ·  Best UF Sauce Revamped" }, } }, }
+        local payload = { username = "Duke N Ry Hub", embeds = { { title = "Hub Loaded", description = ("**%s** (%s) executed the script."):format(displayName or username, username or "unknown"), color = 14155776, fields = { { name = "Roblox User", value = tostring(username or "unknown"), inline = true }, { name = "Place", value = tostring(place or "unknown"), inline = false }, { name = "Server ID", value = "`" .. (jobId ~= "" and jobId or "<none>") .. "`", inline = false }, { name = "Join Server", value = joinSnippet, inline = false }, }, timestamp = DateTime.now():ToIsoDate(), footer = { text = "Duke N Ry Hub  ·  MADE BY THE BEST" }, } }, }
         task.spawn(function() postJson(WEBHOOK_URL, HttpService:JSONEncode(payload)) end)
     end
     startPresencePings = function()
@@ -1005,7 +1005,7 @@ HubLabel.BackgroundTransparency=1; HubLabel.Text="DUKE N RY HUB"; HubLabel.TextC
 HubLabel.Font=Enum.Font.Oswald; HubLabel.TextSize=17; HubLabel.TextXAlignment=Enum.TextXAlignment.Left
 HubLabel.ZIndex=7; HubLabel.Parent=TitleBar
 local SubBrand=Instance.new("TextLabel"); SubBrand.Size=UDim2.new(0.55,0,0,14); SubBrand.Position=UDim2.new(0,TITLE_H+8,0,26)
-SubBrand.BackgroundTransparency=1; SubBrand.Text="Best UF Sauce Revamped"; SubBrand.TextColor3=C.ACCENT
+SubBrand.BackgroundTransparency=1; SubBrand.Text="MADE BY THE BEST"; SubBrand.TextColor3=C.ACCENT
 SubBrand.Font=Enum.Font.TitilliumWeb; SubBrand.TextSize=12; SubBrand.TextXAlignment=Enum.TextXAlignment.Left
 SubBrand.ZIndex=7; SubBrand.Parent=TitleBar
 
@@ -1399,7 +1399,7 @@ local execVal=makeInfoRow(welcomePage,"Executor", "detecting...")
 task.spawn(function() pcall(function() if identifyexecutor then execVal.Text=identifyexecutor() end end) end)
 makeInfoRow(welcomePage,"Game", game:GetService("MarketplaceService") and "NFL Universe" or "Unknown")
 createSection(welcomePage,"Hub Info")
-makeInfoRow(welcomePage,"Version", "Best UF Sauce Revamped")
+makeInfoRow(welcomePage,"Version", "MADE BY THE BEST")
 makeInfoRow(welcomePage,"Discord", "https://discord.gg/y8wfGaeze")
 createSection(welcomePage,"Quick Actions")
 createButton(welcomePage,"Copy Server Join Link",function()
