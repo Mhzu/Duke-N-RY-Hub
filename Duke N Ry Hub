@@ -843,14 +843,14 @@ local _configRegistry={}
 local function _registerConfigEntry(id,kind,getFn,setFn) _configRegistry[id]={kind=kind,get=getFn,set=setFn} end
 
 local C = {
-    BG        = Color3.fromRGB(10,10,10)
-    BG2       = Color3.fromRGB(15,15,15)
-    BG3       = Color3.fromRGB(22,22,22)
-    BG4       = Color3.fromRGB(30,30,30)
-    BG5       = Color3.fromRGB(40,40,40)
-    ACCENT     = Color3.fromRGB(150,150,150)
-    ACCENT2    = Color3.fromRGB(120,120,120)
-    ACCENT_DIM = Color3.fromRGB(55,55,55)
+    BG        = Color3.fromRGB(10,10,10),
+    BG2       = Color3.fromRGB(15,15,15),
+    BG3       = Color3.fromRGB(22,22,22),
+    BG4       = Color3.fromRGB(30,30,30),
+    BG5       = Color3.fromRGB(40,40,40),
+    ACCENT     = Color3.fromRGB(150,150,150),
+    ACCENT2    = Color3.fromRGB(120,120,120),
+    ACCENT_DIM = Color3.fromRGB(55,55,55),
     WHITE     = Color3.fromRGB(241,245,249),
     TEXT      = Color3.fromRGB(203,213,225),
     SUBTEXT   = Color3.fromRGB(100,116,139),
